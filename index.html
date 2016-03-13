@@ -12,7 +12,7 @@
   <script type="text/javascript" src="./js/script.js"></script>
 </head>
 
-<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="118">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -21,137 +21,199 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#jumbotron">Cory + Melanie Wedding</a>
+        <a class="navbar-brand" href="#jumbotron">Cory + Melanie's Wedding</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#location">Locations</a></li>
-          <li><a href="#ceremony">The Ceremony</a></li>
-          <li><a href="#reception">The Reception</a></li>
-          <li><a href="#about-us">About Us</a></li>
-          <li class="site-title"><a href="#">Cory + Melanie</br>Wedding</a></li>
-          <li><a href="#visiting-boston">Visiting Boston</a></li>
-          <li><a href="#contact-info">Contact Info</a></li>
-          <li><a href="#registry">Registry</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#location-header">Locations</a></li>
+          <li><a href="#ceremony-header">The Ceremony</a></li>
+          <li><a href="#reception-header">The Reception</a></li>
+          <li><a href="#about-us-header">About Us</a></li>
+          <!-- <li class="site-title"><a href="#">Cory + Melanie</br>Wedding</a></li> -->
+          <li><a href="#visiting-boston-header">Visiting Boston</a></li>
+          <li><a href="#contact-info-header">Contact Info</a></li>
+          <li><a href="#registry-header">Registry</a></li>
+          <li><a href="#rsvp-header">RSVP</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  <div id="header-image" class="row main-row">
-    <div id="jumbotron" class="jumbotron">
-      <div class="container-fluid">
-        <h1>Cory + Melanie<br>Wedding</h1>
-        <!-- <p>lipsum</p> -->
+  <div id="header-image" class="row main-row image">
+    <div class="container-fluid">
+      <div class="website-title">
+        <h1>Cory + Melanie's<br>Wedding</h1>
       </div>
     </div>
   </div>
-  <!-- <div id="thumbnail" class="row">
-    <div class="col-md-6">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x150" alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>lorem ipsum dolor sit amet.</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="thumbnail">
-        <img src="http://placehold.it/350x150" alt="...">
-        <div class="caption">
-          <h3>Thumbnail label</h3>
-          <p>lorem ipsum dolor sit amet.</p>
-          <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div id="location" class="row main-row">
-    <div class="container-fluid">
+    <div class="container-fluid sub-row">
       <div class="paper curl">
-        <h2>Locations</h2>
+        <h2 id="location-header">Locations</h2>
         <hr class="main-hr">
         <div class="multi-up-container">
           <div class="multi-up-item">
             <h3>Ceremony</h3>
-            <hr class="heart-hr">
+            <hr class="sub-hr heart-hr">
             <h4>Boston Public Garden</h4>
             <p>16 Charles St</p>
             <p>Boston, MA 02108</p>
           </div>
           <div class="multi-up-item">
             <h3>Reception</h3>
-            <hr class="glass-hr">
+            <hr class="sub-hr glass-hr">
             <h4>College Club of Boston</h4>
             <p>44 Commonwealth Avenue</p>
             <p>Boston, MA 02116</p>
             <p><a href="http://www.thecollegeclubofboston.com/">thecollegeclubofboston.com</a></p>
-            <p><a href="tel:+16175369510">617.536.9510</a></p>
+            <p><a href="tel:+16175369510">617-536-9510</a></p>
           </div>
         </div>
         <div class="map-container">
-          <iframe class="mapbox" width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/cmchap.p61oggnk/attribution,zoompan,zoomwheel.html?access_token=pk.eyJ1IjoiY21jaGFwIiwiYSI6ImNpa2Z1b2RmZDAwMnR1ZWtsbzU4OGYxdmUifQ.EXQM2g8oKmgWKeyGS0CtmA'></iframe>
-          <div class="map-cover"></div>
+          <iframe class="mapbox" width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/cmchap.p61oggnk/attribution,zoompan.html?access_token=pk.eyJ1IjoiY21jaGFwIiwiYSI6ImNpa2Z1b2RmZDAwMnR1ZWtsbzU4OGYxdmUifQ.EXQM2g8oKmgWKeyGS0CtmA'></iframe>
+          <div id="map-overlay"></div>
         </div>
       </div>
     </div>
   </div>
   <div id="ceremony" class="row main-row">
-    <div class="container-fluid">
-      <h2>Ceremony</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+      <div class="col-md-6 image">
+      </div>
+      <div class="col-md-6">
+        <div class="paper curl">
+          <h2 id="ceremony-header">The Ceremony</h2>
+          <hr class="main-hr">
+          <p>
+            The ceremony will be ouside beside the lake in the Boston Public Garden. It will not last more than 20 minutes. There will be a small number of seats available for those who need them, but we hope most of you will stand the whole time (like us!).
+          </p>
+          <p>The dress code for the wedding day is semiformal (men in suits, women in cocktail attire). We'll be pretty formal with our white dress and morning suit, so you should feel free to get fancy.</p>
+          <p>After the ceremony, we will all walk the 1/4 mile to the reception.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div id="reception" class="row main-row">
-    <div class="container-fluid">
-      <h2>Reception</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+      <div class="col-md-6">
+        <div class="paper curl">
+          <h2 id="reception-header">The Reception</h2>
+          <hr class="main-hr">
+          <p>The reception is at the College Club of Boston, a quaint townhouse on Commonwealth Avenue 1/4 mile from the ceremony location.</p>
+          <p>Dinner and drinks provided. Bring your own dancing shoes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 image">
+      </div>
     </div>
   </div>
   <div id="about-us" class="row main-row">
-    <div class="container-fluid">
-      <h2>About Us</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+      <div class="col-md-6 image">
+      </div>
+      <div class="col-md-6">
+        <div class="paper curl">
+          <h2 id="about-us-header">About Us</h2>
+          <hr class="main-hr">
+          <p>We met nine years ago at the College of William & Mary. After briefly meeting during freshman orientation, we ended up sitting next to each other on our first day of choir. We started hanging out after choir, and on our first date we jumped over the Governor’s Palace wall in Colonial Williamsburg (a student tradition of nublous legality).</p>
+          <p>Over the last nine years, we’ve been through good and bad together. But after going through breakups/reunions, long distance/sharing an apartment, we decided that life is more fun together. We cannot wait to share the rest of our lives with each other.</p>
+          <p>After much deliberation and consideration of our lives together, we have decided to change both of our names. We want a name that we can share as a couple and later with our children as a family. However, we could not decide whose name to use. In the end, we decided to merge our last names into something new, signifying our union while still honoring our roots. After October 9th, we will be Cory and Melanie Chainsman.</p>
+        </div>
+      </div>
     </div>
   </div>
   <div id="visiting-boston" class="row main-row">
-    <div class="container-fluid">
-      <h2>Visiting Boston</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-    </div>
-  </div>
-  <div id="what-to-expect" class="row main-row">
-    <div class="container-fluid">
-      <h2>What to Expect</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+      <div class="paper curl">
+        <h2 id="visiting-boston-header">Visiting Boston</h2>
+        <hr class="main-hr">
+        <p>Thank you to everyone who is traveling from near and far to celebrate with us. Here are some recommendations for travel, transportation, hotels, and activities.</p>
+        <div class="multi-up-container">
+          <div class="multi-up-item">
+            <h3>Airport</h3>
+            <hr class="sub-hr">
+            <p>Boston Logan Airport (BOS)</p>
+          </div>
+          <div class="multi-up-item">
+            <h3>Transportation</h3>
+            <hr class="sub-hr">
+            <p>No cars are required. The hotel, ceremony, and reception are all within walking distance. You can easily get taxicabs, Ubers, public transportation, and even a horse and buggy if you're so inclined.</p>
+          </div>
+          <div class="multi-up-item">
+            <h3>Hotel</h3>
+            <hr class="sub-hr">
+            <p>We have set aside a block of rooms at the Boston Copley Marriot. Please reserve your room before Sept 20th.
+            </p>
+            <br>
+            <p><a href="https://resweb.passkey.com/Resweb.do?mode=welcome_ei_new&eventID=14801512">Reservation Website</a></p>
+          </div>
+          <div class="multi-up-item">
+            <h3>Activities</h3>
+            <hr class="sub-hr">
+            <ul>
+              <li>Boston Freedom Trail</li>
+              <li>Museum of Science</li>
+              <li>Sam Adams Brewery tour</li>
+              <li>Harpoon Brewery tour</li>
+              <li>Museum of Fine Arts</li>
+              <li>Boston Children's Museum</li>
+              <li>SOWA Markets</li>
+              <li>Boston Public Market</li>
+              <li>Shopping on Newbury Street</li>
+              <li>Tripping over cobblestones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div id="contact-info" class="row main-row">
-    <div id="section4" class="container-fluid">
-      <h2>Contact Info</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+      <div class="paper curl">
+        <h2 id="contact-info-header">Contact Info</h2>
+        <hr class="main-hr">
+        <div class="multi-up-container">
+          <div class="multi-up-item">
+            <h3>Before the Wedding Weekend</h3>
+            <hr class="sub-hr">
+            <p>Email us at</p>
+            <p><a class="email" href="mailto:coryandmelaniechainsman@gmail.com">coryandmelaniechainsman@gmail.com</a></p>
+          </div>
+          <div class="multi-up-item">
+            <h3>During the Wedding Weekend</h3>
+            <hr class="sub-hr">
+            <p>We will be busy during the weekend itself, so we are going to delegate all questions to some kind soul in our wedding party. We haven't yet decided who will <del>be the victim</del> handle this duty, but when we do, we'll post it here.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  </div>
   <div id="registry" class="row main-row">
-    <div id="section4" class="container-fluid">
-      <h2>Registry</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    <div class="container-fluid sub-row">
+    <div class="col-md-3 image first-image">
+      </div>
+      <div class="col-md-6">
+      <div class="paper curl">
+        <h2 id="registry-header">Registry</h2>
+        <hr class="main-hr">
+        <p>We've chosen to register with Zola, an easy-to-use registry website that enables us to register for the gifts we want, all in one place.</p>
+        <p>We recognize that you want to help us start our married life together, but we have a lot of household items already. So if you can't find the perfect gift on our registry, please feel free to donate to our Honemoon/House/Family fund (also listed on Zola).</p>
+        <br>
+        <p><a href="https://www.zola.com/registry/coryandmelanie2016">Zola Registry Website</a></p>
+      </div>
+      </div>
+      <div class="col-md-3 image second-image">
+      </div>
     </div>
   </div>
   <div id="rsvp" class="row main-row">
     <div id="section4" class="container-fluid">
-      <h2>RSVP</h2>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+      <h2 id="rsvp-header">RSVP</h2>
+      <hr class="main-hr">
+      <p>Please RSVP, so we know you're coming.</p>
+      <p>We're looking forward to it!</p>
+      <br>
+      <p><a href="http://coryandmelanie.app.rsvpify.com/">RSVP Website</a></p>
     </div>
   </div>
 </body>
