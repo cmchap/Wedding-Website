@@ -11,10 +11,11 @@
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
   <!-- <script type="text/javascript" src="./js/modernizr.js"></script> -->
-  <script type="text/javascript" src="./js/script.js"></script>
+  <!-- <script type="text/javascript" src="./js/script.js"></script> -->
+  <script type="text/javascript" src="./js/concatenated.js"></script>
 </head>
 
-<body class="container-fluid" data-spy="scroll" data-target=".navbar" data-offset="118">
+<body class="container-fluid" data-spy="scroll" data-target=".navbar">
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -23,19 +24,19 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#jumbotron">Cory + Melanie's Wedding</a>
+        <a class="navbar-brand" href="#header-image">Cory + Melanie's Wedding</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#location-header">Locations</a></li>
-          <li><a href="#ceremony-header">The Ceremony</a></li>
-          <li><a href="#reception-header">The Reception</a></li>
-          <li><a href="#about-us-header">About Us</a></li>
+          <li><a href="#location-page">Locations</a></li>
+          <li><a href="#ceremony-page">The Ceremony</a></li>
+          <li><a href="#reception-page">The Reception</a></li>
+          <li><a href="#about-us-page">About Us</a></li>
           <!-- <li class="site-title"><a href="#">Cory + Melanie</br>Wedding</a></li> -->
-          <li><a href="#visiting-boston-header">Visiting Boston</a></li>
-          <li><a href="#contact-info-header">Contact Info</a></li>
-          <li><a href="#registry-header">Registry</a></li>
-          <li><a href="#rsvp-header">RSVP</a></li>
+          <li><a href="#visiting-boston-page">Visiting Boston</a></li>
+          <li><a href="#contact-info-page">Contact Info</a></li>
+          <li><a href="#registry-page">Registry</a></li>
+          <li><a href="#rsvp-page">RSVP</a></li>
         </ul>
       </div>
     </div>
@@ -49,7 +50,7 @@
   </div>
   <div id="location" class="row main-row">
     <div class="container-fluid sub-row">
-      <div class="paper curl">
+      <div id="location-page" class="paper curl">
         <h2 id="location-header">Locations</h2>
         <hr class="main-hr">
         <div class="multi-up-container">
@@ -82,7 +83,7 @@
       <div class="col-md-6 image">
       </div>
       <div class="col-md-6">
-        <div class="paper curl">
+        <div id="ceremony-page" class="paper curl">
           <h2 id="ceremony-header">The Ceremony</h2>
           <hr class="main-hr">
           <p>
@@ -97,7 +98,7 @@
   <div id="reception" class="row main-row">
     <div class="container-fluid sub-row">
       <div class="col-md-6">
-        <div class="paper curl">
+        <div id="reception-page" class="paper curl">
           <h2 id="reception-header">The Reception</h2>
           <hr class="main-hr">
           <p>The reception is at the College Club of Boston, a quaint townhouse on Commonwealth Avenue 1/4 mile from the ceremony location.</p>
@@ -113,7 +114,7 @@
       <div class="col-md-6 image">
       </div>
       <div class="col-md-6">
-        <div class="paper curl">
+        <div id="about-us-page" class="paper curl">
           <h2 id="about-us-header">About Us</h2>
           <hr class="main-hr">
           <p>We met nine years ago at the College of William & Mary. After briefly meeting during freshman orientation, we ended up sitting next to each other on our first day of choir. We started hanging out after choir, and on our first date we jumped over the Governor’s Palace wall in Colonial Williamsburg (a student tradition of nublous legality).</p>
@@ -125,7 +126,7 @@
   </div>
   <div id="visiting-boston" class="row main-row">
     <div class="container-fluid sub-row">
-      <div class="paper curl">
+      <div id="visiting-boston-page" class="paper curl">
         <h2 id="visiting-boston-header">Visiting Boston</h2>
         <hr class="main-hr">
         <p>Thank you to everyone who is traveling from near and far to celebrate with us. Here are some recommendations for travel, transportation, hotels, and activities.</p>
@@ -170,7 +171,7 @@
   </div>
   <div id="contact-info" class="row main-row">
     <div class="container-fluid sub-row">
-      <div class="paper curl">
+      <div id="contact-info-page" class="paper curl">
         <h2 id="contact-info-header">Contact Info</h2>
         <hr class="main-hr">
         <div class="multi-up-container">
@@ -195,7 +196,7 @@
     <div class="col-md-3 image first-image">
       </div>
       <div class="col-md-6">
-      <div class="paper curl">
+      <div id="registry-page" class="paper curl">
         <h2 id="registry-header">Registry</h2>
         <hr class="main-hr">
         <p>We've chosen to register with Zola, an easy-to-use registry website that enables us to register for the gifts we want, all in one place.</p>
@@ -209,7 +210,7 @@
     </div>
   </div>
   <div id="rsvp" class="row main-row">
-    <div id="section4" class="container-fluid">
+    <div id="rsvp-page" class="container-fluid">
       <h2 id="rsvp-header">RSVP</h2>
       <hr class="main-hr">
       <p>Please RSVP, so we know you're coming.</p>
