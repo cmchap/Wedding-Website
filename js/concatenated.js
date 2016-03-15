@@ -44,27 +44,27 @@ $(document).ready(function() {
 
 
   // scrollNav();
-  // $('.site-title').click(function(event) {
-  //   $('html, body').stop().animate({
-  //     scrollTop: 0
-  //   }, 400);
-  //   return false;
-  // });
-  // $('.navbar-brand').click(function(event) {
-  //   var $navbar = $(".navbar-collapse");
-  //   var _opened = $navbar.hasClass("in");
-  //   if (_opened === true) {
-  //     $navbar.collapse('hide');
-  //   }
-  // });
-  // $(document).click(function(event) {
-  //   var clickover = $(event.target);
-  //   var $navbar = $(".navbar-collapse");
-  //   var _opened = $navbar.hasClass("in");
-  //   if (_opened === true && !clickover.hasClass("navbar-toggle")) {
-  //     $navbar.collapse('hide');
-  //   }
-  // });
+  $('.site-title').click(function(event) {
+    $('html, body').stop().animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+  });
+  $('.navbar-brand').click(function(event) {
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true) {
+      $navbar.collapse('hide');
+    }
+  });
+  $(document).click(function(event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+      $navbar.collapse('hide');
+    }
+  });
 
   //
   // Fix Mapbox breaking a smooth page scroll on touch-enabled devices.
